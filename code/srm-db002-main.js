@@ -158,16 +158,16 @@ function load_settings() {
     var keys = d.getkeys()
     if (keys == null) {
 		post("[load_settings] file '" + path + "' does not exist or could not be opened; using default settings...\n")
-        return
     }
+    else {
+        post("[load_settings] read dict from '" + path + "':\n")
 
-    post("[load_settings] read dict from '" + path + "':\n")
-
-    // Translate to js object
-    var new_cfg = JSON.parse( d.stringify() )
-    post( JSON.stringify(new_cfg),"\n")
-
-    _cfg = new_cfg
+        // Translate to js object
+        var new_cfg = JSON.parse( d.stringify() )
+        post( JSON.stringify(new_cfg),"\n")
+    
+        _cfg = new_cfg
+    }
 
     var o
     o = this.patcher.getnamed("density");
