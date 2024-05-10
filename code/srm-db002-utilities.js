@@ -52,9 +52,12 @@ exports.post_pattern = function (p) {
     var t = 0;
     for(var i = 0; i < p.notes.length; i++) {
         var t1 = p.notes[i].s
-        for (var j = 0; j < Math.round((t1 - t) / defs.NOTE16); j++) {
+        var interval = Math.round((t1 - t) / defs.NOTE16)
+        //post("[" + i + "] " + t1 + "(" + interval + ")\n")
+        for (var j = 0; j < interval; j++) {
             str += " "
         }
+        t = t1
         str += "o"
     }
 

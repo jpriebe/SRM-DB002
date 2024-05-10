@@ -42,7 +42,7 @@ function create_eight_bar_snare_pattern()  {
 
     var r = get_random_int(5)
     if (r < 1) {
-        post("[create_eight_bar_snare_pattern] adding roll...")
+        post("[create_eight_bar_snare_pattern] adding roll...\n")
         pattern = add_roll(pattern)
     }
 
