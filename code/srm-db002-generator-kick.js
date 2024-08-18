@@ -53,15 +53,10 @@ function create_eight_bar_kick_pattern() {
         pattern.notes.push(note)
     }
 
-    post("[create_eight_bar_kick_pattern] four on the floor:\n")
-    post_pattern(pattern)
-
     var r = get_random_int(5)
     if (r < 1) {
         post("[create_eight_bar_kick_pattern] adding turnaround...\n")
         pattern = add_turnaround(pattern)
-        post("[create_eight_bar_kick_pattern] with turnaround:\n")
-        post_pattern(pattern)
     }
 
 
