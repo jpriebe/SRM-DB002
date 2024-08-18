@@ -1,8 +1,27 @@
 ## SRM-DB002
 
-This is a Max for Live MIDI Tool Generator for building house-style drum beats for Drum Racks.  Each drum is a different note in the drum rack.
+This is a Max for Live MIDI Tool Generator for building house-style drum beats for Ableton Live Drum Racks. 
 
-When you first use the generator, you will need to set the notes for each drum.  The settings should be preserved from that point forward.
+## Installation
+
+Download the SRM-DB002.amxd file from this repo.  Save it to the `~/Music/Ableton/User Library/MIDI Tools` folder.  If you don't have the `MIDI Tools` folder in your user library, you can create that folder.
+
+## Basic usage
+
+When editing a MIDI clip in Live, select the "MIDI Generative Tools" view (to the left of the clip).
+
+I recommend that you set your clip length to 8 bars before using the generator.  You can use shorter clips, but you won't get as much variation in the rhythm.
+
+When you first use the generator, you will need to set the notes for each drum.  The settings should be preserved from that point forward.  It is recommended that you use one note mapping across all your drum racks.  If every drum rack you use has different note mappings (e.g. snare is on C#1 for one kit and G2 for another), you will find the generator tedious to use, since you will need to remap the drums every time you switch racks.
+
+After entering the notes for each drum, you can adjust parameters:
+- density: how many notes will be generated per bar for "non-foundational" drums like percussion
+- bounce: how much the algorithm favors the 16th notes between the 8th notes
+
+You can disable note generation for specific drums by clicking the enable/disable toggle button for that drum.  If you are happy with the pattern generated for a given drum, but you want to generate new patterns for other drums, you can lock the drum by clicking the lock button to the right of the enable/disable button.
+
+Click the apply button to generate a beat.  Curate your beat by locking drums that you are satisifed with and applying again.  Repeat until you have a beat you are happy with.
+
 
 ## Implementation notes
 
