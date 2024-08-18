@@ -2,6 +2,10 @@
 
 This is a Max for Live MIDI Tool Generator for building house-style drum beats for Ableton Live Drum Racks. 
 
+Watch an overview of how to use it:
+
+[![Watch an overview](https://img.youtube.com/vi/R_Ol8blpbJQ/0.jpg)](https://youtu.be/R_Ol8blpbJQ)
+
 ## Installation
 
 Download the SRM-DB002.amxd file from this repo.  Save it to the `~/Music/Ableton/User Library/MIDI Tools` folder.  If you don't have the `MIDI Tools` folder in your user library, you can create that folder.
