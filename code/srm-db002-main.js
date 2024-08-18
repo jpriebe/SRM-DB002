@@ -187,6 +187,7 @@ function load_settings() {
         //oname = "gen-lock-" + k
         //o = this.patcher.getnamed(oname);
         //o.set(_cfg.generators[k].locked)
+        _cfg.generators[k].locked = false
     }
     for(k in _cfg.drums) {
         oname = "drum-note-" + k
